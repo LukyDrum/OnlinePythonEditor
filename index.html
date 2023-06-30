@@ -28,14 +28,19 @@
     <!--Selection-->
     <script src="codeMirror/addon/selection/active-line.js"></script>
 </head>
-<body class="container">
+<body class="m-5">
     <script src="pyRunner.js"></script>
 
     <button class="btn btn-dark m-2" onclick="runCurrentCode()">Run</button>
-    <div id="editorFrame"></div>
-
-    <h3>Output:</h3>
-    <textarea name="codeOutput" id="output" class="form-control" readonly style="height: 200px;"></textarea>
+    <div class="row">
+        <div class="col-md-7">
+            <div id="editorFrame"></div>
+        </div>
+        <div class="col-md-5">
+            <h3>Output:</h3>
+            <textarea name="codeOutput" id="output" class="form-control" readonly style="height: 200px;"></textarea>
+        </div>
+    </div>
 
 
     <script src="codeMirror.js"></script>
